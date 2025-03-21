@@ -16,7 +16,6 @@ Backend: Node.js, Express, Python
 OS & Servers: Linux, Linux Server Management
 ```
 
-
 ## 🛸 - GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=confjuzen&show_icons=true&theme=rose_pine)
 
