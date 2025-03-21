@@ -17,9 +17,9 @@ OS & Servers: Linux, Linux Server Management
 ```
 
 ## 🛸 - GitHub Stats
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=confjuzen&show_icons=true&theme=rose_pine&card_width=360" />
+<a href="https://github.com/confjuzen">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=confjuzen&show_icons=true&theme=rose_pine&card_width=320" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
+<a href="https://github.com/confjuzen">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=confjuzen&layout=compact&theme=rose_pine&size_weight=0.1&count_weight=0.9&card_width=340" />
 </a>
