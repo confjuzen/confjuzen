@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 
 
+
 const Home = () => {
     return (
         <>
+            <div className="border grid">
+
             <div className="item title1"><h1>· TOBY FOSTER ·</h1></div>
             <a className="button fill item link1" href="mailto:toby@confjuzen.com">EMAIL</a>
             <a className="button fill item link2" href="https://www.github.com/confjuzen/">GITHUB</a>
@@ -15,6 +18,7 @@ const Home = () => {
             <Link className="button fill item pro3" to="/graphics">MY GRAPHIC DESIGN</Link>
             <div className="item decription"></div>
         <div className="item2 progap"></div>
+        </div>
      </>
     )
 };
