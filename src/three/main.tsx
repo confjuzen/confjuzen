@@ -9,6 +9,9 @@ const Three: React.FC = () => {
   useEffect(() => {
     if (!containerRef.current) return;
 
+    let modelColor = '#ff014a';
+
+
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xffffff);
 
@@ -49,7 +52,7 @@ const Three: React.FC = () => {
         model.traverse((child) => {
           if ((child as THREE.Mesh).isMesh) {
             (child as THREE.Mesh).material = new THREE.MeshBasicMaterial({
-              color: 0xff014a,
+              color: new THREE.Color(modelColor),
               wireframe: true,
             });
           }
@@ -67,7 +70,7 @@ const Three: React.FC = () => {
     const sphereCount = 150;
     const sphereGeometry = new THREE.SphereGeometry(0.3, 5, 5);
     const sphereMaterial = new THREE.MeshBasicMaterial({
-      color: 0xff014a,
+      color: new THREE.Color(modelColor),
       wireframe: true,
     });
 
@@ -98,6 +101,8 @@ const Three: React.FC = () => {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
+
+
 
     window.addEventListener("resize", handleResize);
 
