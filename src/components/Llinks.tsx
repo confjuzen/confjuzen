@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 
 const Llinks: React.FC = () => {
   const { t } = useTranslation('links');
-  const Llinks = t('links', { returnObjects: true });
+  const Llinks = t('links', { returnObjects: true }) as Array<{ url: string; title: string }>;
     const [isOpen, setIsOpen] = useState(false);
     const [locked, setLocked] = useState(false);
   
@@ -29,18 +29,13 @@ const Llinks: React.FC = () => {
         setIsOpen(false);
       }
     }
-    
-
-
   
-    
-
       return (
         <>
         <div className="item fill button Llinks title2" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onClick={handleClick}><h2>{t('linksTitle')}</h2></div>
 
         <div className={`Llinksdrop ${isOpen ? 'grow' : 'shrink'}`} >
-          {Llinks.map((link, index) => (
+          {Llinks.map((link, index: number) => (
             <a
               key={index}
               className={` fill item link ${'drop'+index}`}
@@ -56,14 +51,6 @@ const Llinks: React.FC = () => {
         </div>
         </>
       );
-
-
-
-
-
-
-
-    
 }
 
 

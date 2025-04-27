@@ -6,16 +6,15 @@ const Langselect = () => {
   const [lockedIsEn, setLockedIsEn] = useState(true);
   const [hoverIsEn, setHoverIsEn] = useState(null);
 
-  function handleClick(isEn) {
+  function handleClick(isEn: boolean) {
     setLockedIsEn(isEn);
     i18n.changeLanguage(isEn ? 'en' : 'fr'); // Lock language when clicked
   }
 
-  function handleMouseEnter(isEn) {
-    setHoverIsEn(isEn);
+  function handleMouseEnter(isEn: boolean) {
+    setHoverIsEn(isEn as unknown as null);
     i18n.changeLanguage(isEn ? 'en' : 'fr'); // Also change language on hover!
   }
-
   function handleMouseLeave() {
     setHoverIsEn(null);
     i18n.changeLanguage(lockedIsEn ? 'en' : 'fr'); // Return to locked language
