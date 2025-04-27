@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom';
 
+import Toby from '../components/toby';
+import Links from '../components/links';
+import Dropdown from '../components/Dropdown';
+import Langselect from '../components/langselect';
+
 
 
 const Home = () => {
     return (
         <>
             <div className="border grid">
-
-            <div className="item title1"><h1>· TOBY FOSTER ·</h1></div>
-            <a className="button fill item link1" href="mailto:toby@confjuzen.com">EMAIL</a>
-            <a className="button fill item link2" href="https://www.github.com/confjuzen/">GITHUB</a>
-            <a className="button fill item link3" href="https://glitch.com/@confjuzen">GLITCH</a>
-            <a className="button fill item link4" href="https://www.instagram.com/confjuzen/">INSTAGRAM</a>
-            <div className="item title2"><h2>PROJECTS</h2></div>
+            <Toby />
+            <Links />
+            <Dropdown />
+            <Langselect />
             <a className="button fill item pro1" href="https://confjuzen.github.io/booki/">BOOKI</a>
             <a className="button fill item pro2" href="https://confjuzen.github.io/Portfolio-architecte-sophie-bluel">PORTFOLIO DYNAMIC</a>
             <Link className="button fill item pro3" to="/graphics">MY GRAPHIC DESIGN</Link>

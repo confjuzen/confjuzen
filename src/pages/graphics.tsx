@@ -1,8 +1,12 @@
-import Border from "../components/border";
+import Toby from "../components/toby";
 
 function Graphics() {
   return (
-  <>
+    <>
+      <div className="border grid">
+
+        <Toby />
+        <div className="funkygall">
 
 
         <div className="blocky">
@@ -38,8 +42,7 @@ function Graphics() {
         </div>
 
         <div className="blocky2">
-          <div className="bigy">TOBY FOSTER
-          </div>
+
         </div>
 
         <div className="blockyspace">
@@ -189,10 +192,10 @@ function Graphics() {
             </div>
 
           </div>
-
+          </div>
         </div>
-        <Border />
-        </>
+      </div>
+    </>
   );
 };
 
