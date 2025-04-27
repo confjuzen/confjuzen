@@ -1,70 +1,45 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Langselect = () => {
-  const [isEng, setIsEng] = useState(true);
-  const [locked, setLocked] = useState(false);
+  const { i18n } = useTranslation();
+  const [lockedIsEn, setLockedIsEn] = useState(true);
+  const [hoverIsEn, setHoverIsEn] = useState(null);
 
-
-  function handleClick() {
-    if (isEng && !locked) {
-      setLocked(true);
-    } else if (isEng && locked) {
-      setLocked(false);
-      setIsEng(false);
-    }
+  function handleClick(isEn) {
+    setLockedIsEn(isEn);
+    i18n.changeLanguage(isEn ? 'en' : 'fr'); // Lock language when clicked
   }
 
-
-  function handleMouseEnter() {
-    if (!locked) {
-      setIsEng(true);
-    }
+  function handleMouseEnter(isEn) {
+    setHoverIsEn(isEn);
+    i18n.changeLanguage(isEn ? 'en' : 'fr'); // Also change language on hover!
   }
 
   function handleMouseLeave() {
-    if (!locked) {
-        setIsEng(false);
-    }
+    setHoverIsEn(null);
+    i18n.changeLanguage(lockedIsEn ? 'en' : 'fr'); // Return to locked language
   }
 
-  function handleClickfr() {
-    if (isEng && locked) {
-      setLocked(true);
-    } else if (isEng && !locked) {
-      setLocked(false);
-      setIsEng(false);
-    }
-  }
-  function handleMouseEnterfr() {
-    if (locked) {
-      setIsEng(true);
-    }
-  }
-
-  function handleMouseLeavefr() {
-    if (locked) {
-        setIsEng(false);
-    }
-  }
-
+  const currentIsEn = hoverIsEn !== null ? hoverIsEn : lockedIsEn;
 
   return (
-    <div className={`Langselect`}>
+    <div className="Langselect">
       <a
         href="#"
-        className={`link item fill ${isEng ? 'selected' : ''}`}
-        onClick={(e) => { e.preventDefault(); handleClick();}}
-        onMouseEnter={handleMouseEnter}
+        className={`link item fill ${currentIsEn ? 'selected' : ''}`}
+        onClick={(e) => { e.preventDefault(); handleClick(true); }}
+        onMouseEnter={() => handleMouseEnter(true)}
         onMouseLeave={handleMouseLeave}
       >
-        ENG
+        EN
       </a>
       <a
         href="#"
-        className={`link item fillr ${!isEng ? 'selected' : ''}`}
-        onClick={(e) => { e.preventDefault(); handleClickfr(); }}
-        onMouseEnter={handleMouseEnterfr}
-        onMouseLeave={handleMouseLeavefr}
+        className={`link item fillr ${!currentIsEn ? 'selected' : ''}`}
+        onClick={(e) => { e.preventDefault(); handleClick(false); }}
+        onMouseEnter={() => handleMouseEnter(false)}
+        onMouseLeave={handleMouseLeave}
       >
         FR
       </a>

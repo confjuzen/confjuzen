@@ -1,0 +1,18 @@
+{
+  "projectsTitle": "WEB DEVELOPMENT",
+  "projects": {
+    "qwenta": {
+      "title": "Qwenta",
+      "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
+      "url": "/grimoire",
+      "tags": ["notion", "feedly"]
+
+    },
+    "grimoire": {
+      "title": "Mon Vieux Grimoire",
+      "discription": "An Open Classrooms project. To Build a full functional backend for book reviewing and management.",
+      "url": "/grimoire",
+      "tags": ["Node", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "multer", "sharp"]
+    }
+  }
+}

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
-const Dropdown: React.FC = () => {
-  
+const Llinks: React.FC = () => {
+  const { t } = useTranslation('links');
+  const Llinks = t('links', { returnObjects: true });
     const [isOpen, setIsOpen] = useState(false);
     const [locked, setLocked] = useState(false);
   
@@ -30,27 +32,15 @@ const Dropdown: React.FC = () => {
     
 
 
-  interface LinkData {
-    title: string;
-    url: string;
-  }
-  
-    const [links, setLinks] = useState<LinkData[]>([]);
-  
-    useEffect(() => {
-      fetch('/local/links.json')
-        .then((res) => res.json())
-        .then((data) => setLinks(data));
-    }, []);
   
     
 
       return (
         <>
-        <div className="item fill button link title2" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onClick={handleClick}><h2>PROJECTS</h2></div>
+        <div className="item fill button Llinks title2" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onClick={handleClick}><h2>{t('linksTitle')}</h2></div>
 
-        <div className={`Dropdown ${isOpen ? 'grow' : 'shrink'}`} >
-          {links.map((link, index) => (
+        <div className={`Llinksdrop ${isOpen ? 'grow' : 'shrink'}`} >
+          {Llinks.map((link, index) => (
             <a
               key={index}
               className={` fill item link ${'drop'+index}`}
@@ -77,4 +67,4 @@ const Dropdown: React.FC = () => {
 }
 
 
-export default Dropdown;
+export default Llinks;
