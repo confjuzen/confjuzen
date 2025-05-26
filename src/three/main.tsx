@@ -3,14 +3,37 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
+import { useLocation } from "react-router-dom";
+
+
+
+
 const Three: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
 
+
+
+  
   useEffect(() => {
     if (!containerRef.current) return;
 
+
+
     let modelColor = '#ff014a';
 
+    function changecolor() {
+
+      if (location.pathname === "/graphics") {
+        modelColor = '#000000';
+      }
+      else {
+        modelColor = '#ff014a';
+      }
+      console.log('location log:', location, modelColor);
+
+    }
+    changecolor();
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xffffff);
@@ -36,6 +59,7 @@ const Three: React.FC = () => {
     window.addEventListener("mousemove", (event) => {
       mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
       mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
     });
 
     const loader = new GLTFLoader();
@@ -91,8 +115,7 @@ const Three: React.FC = () => {
       if (model) {
         model.rotation.x = mouse.x * 2;
         model.rotation.y = mouse.y * 1;
-      }
-
+      };
       renderer.render(scene, camera);
     }
 

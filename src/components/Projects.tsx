@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 
 const Projects: React.FC = () => {
-  const { t } = useTranslation('projects'); // Use the 'projects' namespace
+  const { t } = useTranslation('projects'); 
   const projects = Object.values(t('projects', { returnObjects: true })); // Get the projects as an array
 
   const [isOpen, setIsOpen] = useState(false);
