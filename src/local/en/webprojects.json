@@ -5,8 +5,10 @@
       "title": "QWENTA",
       "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
       "url": "https://github.com/confjuzen/qwenta",
-      "tags": ["notion", "feedly"]
-
+      "tags": ["notion", "feedly"],
+      "img1": "./img/projects/1.png",
+      "img2": "./img/projects/2.png",
+      "img3": "./img/projects/3.png"
     },
     "grimoire": {
       "title": "Mon Vieux Grimoire",
@@ -31,6 +33,12 @@
       "discription": "5",
       "url": "/5",
       "tags": ["5"]
+    },
+    "BOOKI": {
+      "title": "BOOKI",
+      "discription": "5",
+      "url": "/5",
+      "tags": ["html", "css"]
     }
 
 

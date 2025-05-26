@@ -1,16 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
-    font-family: 'Remix';
-    src: url('./fonts/Grotesk Remix/GroteskRemix-Bold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-}
-
-
-
-
 *{
   margin: 0;
   padding: 0;
@@ -141,6 +131,36 @@ canvas {
     transform-origin: top;
      
   }
+  .img1{
+    grid-area: 3 / 2 / 9 / 5;
+    background-color: #6e449173;
+  }
+  .img2{
+    grid-area: 3 / 5 / 9 / 7;
+    background-color: #aa9c7669;
+  }
+  .img3{
+      grid-area: 9 / 1 / 16 / 3;
+      background-color: #79a866;
+
+   }
+  .img1i, .img2i, .img3i{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tagsline{
+    grid-area: 9 / 3 / 10 / 7;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(5vw, 11vw));
+  }
+  .tag{
+    background-color: #000000;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
 }
 .grow {
   animation: grow 0.5s ease-in-out forwards;
@@ -254,11 +274,10 @@ h1 {
   font-weight: 900;
   letter-spacing: 0.5em;
 }
-h1:hover, h2:hover{
+h1:hover, h2:hover, h3:hover{
   cursor: pointer;
 }
 h2 {
-
   font-size:90%;
   margin: 0px;
   padding: 5px;
@@ -266,8 +285,13 @@ h2 {
   letter-spacing: 0.5em;
   text-align: center; 
 /*  -webkit-text-stroke-width: clamp(1px, 0.1vw, 5px);*/
-
 }
+h3 {
+  font-size: clamp(11px, 1.2vw, 16px);
+}
+
+
+
 a:hover{
   text-shadow: 2px 2px #000000;
   color: white;
@@ -315,7 +339,11 @@ a:hover{
   margin-top: max(-90px , -10vw);
 }
 
-
+.open{
+  background-color: #ff014a;
+  color: white;
+  text-shadow: #000000;
+}
 
 .galleryitem{
     width: min(10vw, 120px);
