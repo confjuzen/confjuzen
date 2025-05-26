@@ -1,6 +1,4 @@
-//import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Webdev: React.FC = () => {
@@ -47,9 +45,6 @@ const Webdev: React.FC = () => {
       setTempIndex(null);
     } 
   }
-
-
-
 
   return (
     <>
