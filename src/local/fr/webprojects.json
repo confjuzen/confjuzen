@@ -1,0 +1,51 @@
+{
+  "webprojectsTitle": "WEB DEVELOPMENT~",
+  "webprojects": {
+    "qwenta": {
+      "title": "QWENTA",
+      "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
+      "url": "https://github.com/confjuzen/qwenta",
+      "tags": ["notion", "feedly"],
+      "img1": "./img/projects/1.png",
+      "img2": "./img/projects/2.png",
+      "img3": "./img/projects/3.png"
+    },
+    "grimoire": {
+      "title": "Mon Vieux Grimoire",
+      "discription": "An Open Classrooms project. To Build a full functional backend for book reviewing and management.",
+      "url": "/grimoire",
+      "tags": ["Node", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "multer", "sharp"]
+    },
+    "Nina Carducci": {
+      "title": "Nina Carducci",
+      "discriptiontitle": "Ce projet est le troisième projet de la formation OpenClassrooms – Développeur Web.",
+      "discription": "J’ai travaillé sur le site d’une photographe, Nina Carducci, pour améliorer ses performances, son accessibilité et son référencement. J’ai corrigé plusieurs bugs, optimisé le code et les images, ajouté des métadonnées pour le SEO et mis en place un référencement local via Schema.org. Un rapport détaillant les résultats avant/après a été livré à la cliente.",
+      "url": "/3",
+      "tags": ["SEO", "Performance optimization", "Corrections JavaScript", "Intégration de métadonnées  "]
+    },
+    "Sophie Bluel": {
+      "title": "Sophie Bluel",
+      "discriptiontitle": "Ce projet est le deuxième projet de la formation OpenClassrooms – Développeur Web.",
+      "discription": "Développer un site web dynamique en JavaScript pour présenter les réalisations d’une architecte d’intérieur, incluant : une page de présentation des projets, une interface d’administration sécurisée (login) et une modale d’ajout de nouveaux médias. J'interviens en tant que développeur front-end dans une agence, pour aider à finaliser le portfolio en ligne d’une architecte. J'ai récupèrer une base HTML/CSS statique, un backend existant (fourni), et des maquettes Figma à suivre.",
+      "url": "https://github.com/confjuzen/Portfolio-architecte-sophie-bluel",
+      "tags": ["JavaScript", "HTML", "CSS", "API"]
+    },
+    "5": {
+      "title": "5",
+      "discription": "5",
+      "url": "/5",
+      "tags": ["5"]
+    },
+    "BOOKI": {
+      "title": "BOOKI",
+      "discriptiontitle": "Ce projet est le premier projet de la formation OpenClassrooms – Développeur Web.",
+      "discription": "Créer un site web statique responsive permettant aux utilisateurs de rechercher des hébergements et des activités touristiques dans une ville donnée. Dans un scénario professionnel fictif, vous débutez une alternance dans une start-up qui souhaite mettre en ligne ce site. L’objectif est d’intégrer des maquettes Figma en respectant les bonnes pratiques de développement front-end.",
+      "url": "/5",
+      "tags": ["html", "css", "Flexbox"]
+    }
+
+
+
+
+  }
+}

@@ -6,7 +6,7 @@ import frProjects from './local/fr/projects.json';
 import enLinks from './local/en/links.json';
 import frLinks from './local/fr/links.json';
 import enWebprojects from './local/en/webprojects.json';
-
+import frWebprojects from './local/fr/webprojects.json';
 i18n
 .use(initReactI18next)
 .init({
@@ -18,7 +18,8 @@ i18n
     },
     fr: {
       projects: frProjects,
-      links: frLinks
+      links: frLinks,
+      webprojects: frWebprojects
     }
   },
   lng: 'en',

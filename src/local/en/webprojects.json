@@ -16,17 +16,25 @@
       "url": "/grimoire",
       "tags": ["Node", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "multer", "sharp"]
     },
-    "3": {
-      "title": "3",
-      "discription": "3",
+    "Nina Carducci": {
+      "title": "Nina Carducci",
+      "discriptiontitle": "This is the third project of the OpenClassrooms Web Developer path.",
+      "discription": "I worked on a photographer’s website, Nina Carducci, to improve its performance, accessibility, and SEO. I fixed bugs, optimized code and images, added SEO metadata, and implemented local SEO using Schema.org. I also delivered a detailed report showing the before/after results.",
       "url": "/3",
-      "tags": ["3"]
+      "tags": ["SEO", "Performance optimization", "JavaScript bug fixing", "Metadata integration"],
+      "img1": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/15.png",
+      "img2": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png",
+      "img3": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/final.png"
     },
-    "4": {
-      "title": "4",
-      "discription": "4",
-      "url": "/4",
-      "tags": ["4"]
+    "Sophie Bluel": {
+      "title": "Sophie Bluel",
+      "discriptiontitle": "This is the second project of the OpenClassrooms Web Developer path.",
+      "discription": "Build a dynamic web page using vanilla JavaScript to showcase an interior architect’s portfolio, including: a project gallery page, a secure login page for admin access and a modal window to upload new media files. I join a front-end dev team at a digital agency to assist in completing the architect’s portfolio site. I received static HTML/CSS code, a working backend, and design mockups via Figma.",
+      "url": "https://github.com/confjuzen/Portfolio-architecte-sophie-bluel",
+      "tags": ["JavaScript", "HTML", "CSS", "API"],
+      "img1": "./img/projects/Sophie1.png",
+      "img2": "./img/projects/Sophie2.png",
+      "img3": "./img/projects/Sophie3.png"
     },
     "5": {
       "title": "5",
@@ -36,9 +44,10 @@
     },
     "BOOKI": {
       "title": "BOOKI",
-      "discription": "5",
+      "discriptiontitle": "This is the first project of the OpenClassrooms Web Developer path.",
+      "discription": "Build a responsive static website that lets users find accommodation and tourist activities in the city of their choice. You play the role of a junior developer starting an internship at a startup. Your task is to implement Figma mockups into a real website while following modern front-end development standards.",
       "url": "/5",
-      "tags": ["html", "css"]
+      "tags": ["html", "css", "Flexbox"]
     }
 
 

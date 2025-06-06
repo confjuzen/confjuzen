@@ -20,7 +20,7 @@ const Three: React.FC = () => {
 
 
 
-    let modelColor = '#ff014a';
+    let modelColor = '#c5a0cc';
 
     function changecolor() {
 
@@ -28,7 +28,7 @@ const Three: React.FC = () => {
         modelColor = '#000000';
       }
       else {
-        modelColor = '#ff014a';
+        modelColor = '#c5a0cc';
       }
       console.log('location log:', location, modelColor);
 

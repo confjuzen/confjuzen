@@ -39,7 +39,7 @@ const Webdev: React.FC = () => {
     } else if (isOpen && locked) {
       setSelectedIndex(index);
       setTempIndex(index);
-    } else if (isOpen && locked && selectedIndex == index) {
+    } else if (isOpen && locked && selectedIndex === index) {
       setLocked(false);
       setSelectedIndex(null);
       setTempIndex(null);
@@ -67,41 +67,44 @@ const Webdev: React.FC = () => {
 
       {selectedIndex !== null && (
         <>
-      <div className={`img1 item ${isOpen ? "grow" : "shrink"}`}>
-          <img
-            className={"img1i"}
-            src={projects[selectedIndex].img1}
-            alt={projects[selectedIndex].title}
-          />
-        
-      </div>
-      <div className={`img2 item ${isOpen ? "grow" : "shrink"}`}>
-          <img
-            className={"img2i"}
-            src={projects[selectedIndex].img2}
-            alt={projects[selectedIndex].title}
-          />
-        
-      </div>
-      <div className={`img3 item ${isOpen ? "grow" : "shrink"}`}>
-          <img
-            className={"img3i"}
-            src={projects[selectedIndex].img3}
-            alt={projects[selectedIndex].title}
-          />
-      </div>
-      <div className="tagsline">
-        {projects[selectedIndex].tags.map((tag: string, index: number) => (
-          <div key={index} className="tag item">
-            {tag}
+          <div className={`img1 item ${isOpen ? "grow" : "shrink"}`}>
+              <img
+                className={"img1i"}
+                src={projects[selectedIndex].img1}
+                alt={projects[selectedIndex].title}
+              />
+            
           </div>
-        ))}
+          <div className={`img2 item ${isOpen ? "grow" : "shrink"}`}>
+              <img
+                className={"img2i"}
+                src={projects[selectedIndex].img2}
+                alt={projects[selectedIndex].title}
+              />
+            
+          </div>
+          <div className={`img3 item ${isOpen ? "grow" : "shrink"}`}>
+              <img
+                className={"img3i"}
+                src={projects[selectedIndex].img3}
+                alt={projects[selectedIndex].title}
+              />
+          </div>
+          <div className="tagsline">
+            {projects[selectedIndex].tags.map((tag: string, index: number) => (
+              <div key={index} className="tag item">
+                {tag}
+              </div>
+            ))}
 
-      </div>
-      </>
+          </div>
+          <div className={`discription item ${isOpen ? "grow" : "shrink"}`}>
+            <h2>{projects[selectedIndex].discriptiontitle}</h2>
+            <p>{projects[selectedIndex].discription}</p>
+          </div>
+        </>
       )}
     </>
   );
 };
-
 export default Webdev;
