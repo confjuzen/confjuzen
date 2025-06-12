@@ -1,8 +1,8 @@
 {
   "webprojectsTitle": "WEB DEVELOPMENT~",
   "webprojects": {
-    "qwenta": {
-      "title": "QWENTA",
+    "Qwenta": {
+      "title": "Qwenta",
       "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
       "url": "https://github.com/confjuzen/qwenta",
       "tags": ["notion", "feedly"],
@@ -10,7 +10,7 @@
       "img2": "./img/projects/2.png",
       "img3": "./img/projects/3.png"
     },
-    "grimoire": {
+    "Mon Vieux Grimoire": {
       "title": "Mon Vieux Grimoire",
       "discription": "An Open Classrooms project. To Build a full functional backend for book reviewing and management.",
       "url": "/grimoire",
@@ -36,17 +36,21 @@
       "img2": "./img/projects/Sophie2.png",
       "img3": "./img/projects/Sophie3.png"
     },
-    "5": {
-      "title": "5",
-      "discription": "5",
-      "url": "/5",
-      "tags": ["5"]
+    "Kasa": {
+      "title": "Kasa",
+      "discriptiontitle": "This is the fourth project of the OpenClassrooms Web Developer path.",
+      "discription": "Build the user interface of a rental platform for Kasa, based on Figma designs and mock data from a JSON file. The goal was to develop a modern, responsive front-end using React and React Router for smooth page transitions. The project emphasized component architecture and visual consistency without relying on a backend, while implementing precise UI behaviors (image carousel, collapsible menus…).",
+      "url": "/https://github.com/confjuzen/kasa",
+      "tags": ["React", "React Router", "Vite", "Custom Animations and image gallery logic"],
+      "img1": "./img/projects/kasa1.webp",
+      "img2": "./img/projects/kasa2.png",
+      "img3": "./img/projects/kasa3.webp"
     },
-    "BOOKI": {
-      "title": "BOOKI",
+    "Booki": {
+      "title": "Booki",
       "discriptiontitle": "This is the first project of the OpenClassrooms Web Developer path.",
       "discription": "Build a responsive static website that lets users find accommodation and tourist activities in the city of their choice. You play the role of a junior developer starting an internship at a startup. Your task is to implement Figma mockups into a real website while following modern front-end development standards.",
-      "url": "/5",
+      "url": "https://github.com/confjuzen/booki",
       "tags": ["html", "css", "Flexbox"]
     }
 

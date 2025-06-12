@@ -1,8 +1,8 @@
 {
   "webprojectsTitle": "WEB DEVELOPMENT~",
   "webprojects": {
-    "qwenta": {
-      "title": "QWENTA",
+    "Qwenta": {
+      "title": "Qwenta",
       "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
       "url": "https://github.com/confjuzen/qwenta",
       "tags": ["notion", "feedly"],
@@ -10,7 +10,7 @@
       "img2": "./img/projects/2.png",
       "img3": "./img/projects/3.png"
     },
-    "grimoire": {
+    "Mon Vieux Grimoire": {
       "title": "Mon Vieux Grimoire",
       "discription": "An Open Classrooms project. To Build a full functional backend for book reviewing and management.",
       "url": "/grimoire",
@@ -30,17 +30,21 @@
       "url": "https://github.com/confjuzen/Portfolio-architecte-sophie-bluel",
       "tags": ["JavaScript", "HTML", "CSS", "API"]
     },
-    "5": {
-      "title": "5",
-      "discription": "5",
-      "url": "/5",
-      "tags": ["5"]
+    "Kasa": {
+      "title": "Kasa",
+      "discriptiontitle": "Ce projet est le quatrieme projet de la formation OpenClassrooms – Développeur Web.",
+      "discription": "Concevoir l’interface d’un site de location d’appartements pour l’entreprise Kasa, en suivant des maquettes Figma et en simulant les données à partir d’un fichier JSON. L’objectif principal était de créer une application responsive et dynamique en React, avec une navigation fluide grâce à React Router. Le projet m’a permis de structurer une interface professionnelle sans back-end, en respectant des contraintes fonctionnelles précises (comportement de la galerie, collapses interactifs…).",
+      "url": "/https://github.com/confjuzen/kasa",
+      "tags": ["React", "React Router", "Vite", "Gestion avancée animations et de la galerie d’images"],
+      "img1": "./img/projects/kasa1.webp",
+      "img2": "./img/projects/kasa2.png",
+      "img3": "./img/projects/kasa3.webp"
     },
-    "BOOKI": {
-      "title": "BOOKI",
+    "Booki": {
+      "title": "Booki",
       "discriptiontitle": "Ce projet est le premier projet de la formation OpenClassrooms – Développeur Web.",
       "discription": "Créer un site web statique responsive permettant aux utilisateurs de rechercher des hébergements et des activités touristiques dans une ville donnée. Dans un scénario professionnel fictif, vous débutez une alternance dans une start-up qui souhaite mettre en ligne ce site. L’objectif est d’intégrer des maquettes Figma en respectant les bonnes pratiques de développement front-end.",
-      "url": "/5",
+      "url": "https://github.com/confjuzen/booki",
       "tags": ["html", "css", "Flexbox"]
     }
 
