@@ -227,29 +227,33 @@ canvas {
     
     grid-area: 3 / 1 / 4 / 7 ;
     display: flex;
-    overflow-x: scroll;
+    overflow: hidden;
     h3 {
       flex: 1 0 auto;
       padding: 0px 10px 0px 10px;
     }
 
-  }/*
+  }
   .img1{
-    grid-area: 3 / 2 / 9 / 5;
+    grid-area: 6 / 5 / 8 / 7;
   }
   .img2{
-    grid-area: 3 / 5 / 9 / 7;
+    grid-area: 8 / 5 / 10 / 7;
   }
   .img3{
-      grid-area: 9 / 1 / 16 / 3;
+      grid-area: 10 / 5 / 12 / 7;
    }
   .img1i, .img2i, .img3i{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+  .github{
+    grid-area: 5 / 5 / 6 / 7 ;
+
+  }
   .tagsline{
-    grid-area: 9 / 3 / 10 / 7;
+    grid-area: 4 / 1 / 5 / 7;
     display: flex;
   }
   .tag{
@@ -261,7 +265,7 @@ canvas {
     flex-grow: 1;
   }
   .discription{
-    grid-area: 10 / 3 / 16 / 7;
+    grid-area: 5 / 1 / 13 / 5;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -275,7 +279,7 @@ canvas {
       font-weight: 500;
       padding: 5px;
     }
-  }*/
+  }
 }
 
 /* - - - - - -        - -- end -    - -      -    --     - - -  -*/
@@ -345,6 +349,14 @@ a:visited {
 .fillr:hover{
   color: #ffffff;
 
+}
+.github{
+  background-color: #8400b991;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+}
+.github:hover{
+  background-color: #36004bb7;
 }
 .fillr:before {
   content: "";
