@@ -101,6 +101,7 @@ const Webdev: React.FC = () => {
           <div className={`discription item ${isOpen ? "grow" : "shrink"}`}>
             <h2>{projects[selectedIndex].discriptiontitle}</h2>
             <p>{projects[selectedIndex].discription}</p>
+            <p>{projects[selectedIndex].difficulties}</p>
           </div>
           <a href={projects[selectedIndex].url} className="github item">GitHub</a>
         </>

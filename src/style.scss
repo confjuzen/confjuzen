@@ -214,6 +214,66 @@ canvas {
   .skilldrop11{
     grid-area: 11 / 6 / 12 / 7;
   }
+  .gallery{
+  width: min(80vw, 1200px);
+  margin: auto;
+  }
+  .line1 {
+    display: flex;   
+    flex-flow:row-reverse nowrap;
+    align-items: baseline;
+    margin-bottom: -30px;
+  }
+  .line2 {
+    display: flex;   
+    align-items: baseline;
+  }
+  .line3{
+    display: flex;  
+    z-index: 2;
+  } 
+  .line4{
+    display: flex;   
+    flex-flow:row-reverse nowrap;
+    vertical-align: baseline;
+    margin-top: max(-90px , -10vw);
+  }
+  .open{
+    background-color: #8400b991;
+    color: white;
+    text-shadow: #000000;
+  }
+  .galleryitem{
+      width: min(10vw, 120px);
+      transition: 0.5s;
+      display: inline-block;
+  }
+  .galleryitem2{
+      width: min(20vw, 240px);
+      transition: 0.5s;
+      display: inline-block;
+  }
+  .auto{
+    margin-right: min(10vw, 120px);
+  }
+  .galleryitem img, .galleryitem2 img {
+      width: 100%;
+      transition: 0.5s;
+      border:black solid 6px;
+      margin: -6px;
+  } 
+  .galleryitem:hover img, .galleryitem2:hover img {
+    cursor: pointer;
+  }
+  .galleryitem:hover, .galleryitem2:hover {
+    z-index: 5000;
+  }
+  .galleryitem:hover, .galleryitem2:hover {
+    width: min(20vw, 240px);
+  }
+  .galleryitem2:hover {
+    width: min(40vw, 480px);
+  }
 }
 
 /*     - - - - - - -   - - - - - - - - portrait - - - - -     -- - - - */
@@ -267,7 +327,7 @@ canvas {
     grid-template-columns: repeat(6, minmax(1vw, 111vw));
   }
   .about{
-    grid-area: 4 / 3 / 13 / 5;
+    grid-area: 6 / 1 / 13 / 5;
     font-size: clamp(14px, 3vw, 40px);
     background-color: #3f005249;
     p {
@@ -283,9 +343,7 @@ canvas {
   }
 
  
-  .gallery{
-    grid-area: 3 / 1 / 4 / 7;
-  }
+
   .webProjects{
     
     grid-area: 3 / 1 / 4 / 7 ;
@@ -342,6 +400,116 @@ canvas {
       font-weight: 500;
       padding: 5px;
     }
+    
+  }
+    .skilldrop0{
+    grid-area: 3 / 3 / 4 / 4
+  }
+  .skilldrop1{
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .skilldrop2{
+    grid-area: 8 / 5 / 9 / 6;
+  }
+  .skilldrop3{
+    grid-area: 8 / 6 / 9 / 7;
+  }
+  .skilldrop4{
+    grid-area: 7 / 5 / 8 / 6;
+  }
+  .skilldrop5{
+    grid-area: 6 / 6 / 7 / 7;
+  }
+  .skilldrop6{
+    grid-area: 9 / 5 / 10 / 6;
+  }
+  .skilldrop7{
+    grid-area: 7 / 6 / 8 / 7;
+  }
+  .skilldrop8{
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  .skilldrop9{
+    grid-area: 3 / 4 / 4 / 5;
+  }
+  .skilldrop10{
+    grid-area: 6 / 5 / 7 / 6;
+  }
+  .skilldrop11{
+    grid-area: 9 / 6 / 10 / 7;
+    }
+  .gallery{
+    width: 40%;
+    margin: auto;
+    grid-area: 3 / 1 / 10 / 7;
+    display: flex;
+    justify-self:center;
+  }
+  
+  .line1 {
+    display: flex;   
+        flex-direction: column;
+
+    align-items: center;
+    margin-right: -25px;
+  }
+  .line2 {
+    display: flex;   
+    flex-direction: column;
+
+    align-items: center;
+    margin-right: -50px;
+    margin-left: -50px;
+
+  }
+  .line3{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    margin-left: -50px;
+    margin-right: -50px;
+  } 
+  .line4{
+    display: flex;   
+    flex-direction: column;
+    vertical-align: center;
+  }
+  .open{
+    background-color: #8400b991;
+    color: white;
+    text-shadow: #000000;
+  }
+  .galleryitem{
+      width: min(10vw, 120px);
+      transition: 0.5s;
+      display: inline-block;
+  }
+  .galleryitem2{
+      width: min(20vw, 240px);
+      transition: 0.5s;
+      display: inline-block;
+  }
+  .auto{
+    margin-right: min(10vw, 120px);
+  }
+  .galleryitem img, .galleryitem2 img {
+      width: 100%;
+      transition: 0.5s;
+      border:black solid 6px;
+      margin: -6px;
+  } 
+  .galleryitem:hover img, .galleryitem2:hover img {
+    cursor: pointer;
+  }
+  .galleryitem:hover, .galleryitem2:hover {
+    z-index: 5000;
+  }
+  .galleryitem:hover, .galleryitem2:hover {
+    width: min(20vw, 240px);
+  }
+  .galleryitem2:hover {
+    width: min(40vw, 480px);
   }
 }
 
@@ -415,8 +583,9 @@ a:visited {
 }
 .github{
   background-color: #8400b991;
-  color: #ffffff;
+  color: #ffffff !important;
   text-shadow: 2px 2px #000000;
+  z-index: 4;
 }
 .github:hover{
   background-color: #36004bb7;
@@ -484,86 +653,12 @@ a:hover{
 
 .button:hover{
   cursor: pointer;
-
   z-index: 6000;
   transition: ease-in-out 0.2s;
   top: 0;
   right: 0px;
 }
 
-.gallery{
-  width: min(80vw, 1200px);
-  margin: auto;
-}
 
-.line1 {
-  display: flex;   
-  flex-flow:row-reverse nowrap;
-  align-items: baseline;
-  margin-bottom: -30px;
-
-}
-.line2 {
-  display: flex;   
-  align-items: baseline;
-
-}
-
-.line3{
-  display: flex;  
-  z-index: 2;
-} 
-
-.line4{
-  display: flex;   
-  flex-flow:row-reverse nowrap;
-  vertical-align: baseline;
-  margin-top: max(-90px , -10vw);
-}
-
-.open{
-  background-color: #8400b991;
-  color: white;
-  text-shadow: #000000;
-}
-
-.galleryitem{
-    width: min(10vw, 120px);
-    transition: 0.5s;
-    display: inline-block;
-}
-
-.galleryitem2{
-    width: min(20vw, 240px);
-    transition: 0.5s;
-    display: inline-block;
-}
-.auto{
-  margin-right: min(10vw, 120px);
-}
-
-
-.galleryitem img, .galleryitem2 img {
-    width: 100%;
-    transition: 0.5s;
-    border:black solid 6px;
-    margin: -6px;
-} 
-.galleryitem:hover img, .galleryitem2:hover img {
-  cursor: pointer;
-}
-
-
-
-.galleryitem:hover, .galleryitem2:hover {
-  z-index: 5000;
-}
-.galleryitem:hover, .galleryitem2:hover {
-  width: min(20vw, 240px);
-}
-.galleryitem2:hover {
-  width: min(40vw, 480px);
-
-}
 
 

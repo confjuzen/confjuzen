@@ -3,7 +3,8 @@
   "webprojects": {
     "Qwenta": {
       "title": "Qwenta",
-      "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
+      "discriptiontitle": "This is the sixth project of the OpenClassrooms Web Developer path.",
+      "discription": "Plan and structure the development of a client website based on user needs, without writing any code. This project focuses on project management, technical specifications, and technology watch.. Tasked with planning the Menu Maker web app (for restaurant menu creation)",
       "url": "https://github.com/confjuzen/qwenta",
       "tags": ["notion", "feedly", "AWS", "Docker"],
       "img1": "./img/projects/1.png",
@@ -12,9 +13,13 @@
     },
     "Mon Vieux Grimoire": {
       "title": "Mon Vieux Grimoire",
-      "discription": "An Open Classrooms project. To Build a full functional backend for book reviewing and management.",
+      "discriptiontitle": "This is the fith project of the OpenClassrooms Web Developer path.",
+      "discription": "Develop the full back-end architecture and API for a book review platform called Mon Vieux Grimoire, built for a bookstore chain based in Lille. I worked closely with a front-end developer to deliver a secure and optimized Express server connected to MongoDB. The goal was to provide full CRUD features, secure authentication, and image optimization while following eco-friendly Green Code practices.",
       "url": "https://github.com/confjuzen/server-grimoire",
-      "tags": ["Node", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "multer", "sharp"]
+      "tags": ["Node", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "Security", "sharp"],
+      "img1": "./img/projects/grim1.png",
+      "img2": "./img/projects/grim2.png",
+      "img3": "./img/projects/grim3.png"
     },
     "Nina Carducci": {
       "title": "Nina Carducci",
@@ -40,7 +45,7 @@
       "title": "Kasa",
       "discriptiontitle": "This is the fourth project of the OpenClassrooms Web Developer path.",
       "discription": "Build the user interface of a rental platform for Kasa, based on Figma designs and mock data from a JSON file. The goal was to develop a modern, responsive front-end using React and React Router for smooth page transitions. The project emphasized component architecture and visual consistency without relying on a backend, while implementing precise UI behaviors (image carousel, collapsible menus…).",
-      "url": "/https://github.com/confjuzen/kasa",
+      "url": "https://github.com/confjuzen/kasa",
       "tags": ["React", "React Router", "Vite", "Custom Animations and image gallery logic"],
       "img1": "./img/projects/kasa1.webp",
       "img2": "./img/projects/kasa2.png",
@@ -51,7 +56,10 @@
       "discriptiontitle": "This is the first project of the OpenClassrooms Web Developer path.",
       "discription": "Build a responsive static website that lets users find accommodation and tourist activities in the city of their choice. You play the role of a junior developer starting an internship at a startup. Your task is to implement Figma mockups into a real website while following modern front-end development standards.",
       "url": "https://github.com/confjuzen/booki",
-      "tags": ["html", "css", "Flexbox"]
+      "tags": ["html", "css", "Flexbox"],
+      "img1": "./img/projects/booki1.png",
+      "img2": "./img/projects/booki2.png",
+      "img3": "./img/projects/booki3.png"
     }
 
 
