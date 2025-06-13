@@ -117,14 +117,19 @@ canvas {
   }
   .about{
     grid-area: 7 / 2 / 12 / 6;
+    font-size: clamp(14px, 3vw, 40px);    
+    background-color: #3f005249;
+    p {
+      padding:  clamp(20px, 3vw, 40px) ; 
+      font-weight: 700;
+      
+    }
   }
   .webProjects{
-    
     grid-area: 3 / 1 / 16 / 2 ;
     display: grid;
     grid-template-rows: repeat(13 ,minmax(5vh, 11vh));
     transform-origin: top;
-     
   }
   .img1{
     grid-area: 3 / 2 / 9 / 5;
@@ -166,6 +171,48 @@ canvas {
       font-weight: 500;
       padding: 5px;
     }
+  }
+  .skillsdrop{
+    grid-area: 3 / 1 / 16 / 7;
+    display: grid;
+    grid-template-rows: repeat(13 ,minmax(5vh, 11vh));
+    grid-template-columns: repeat(6, minmax(1vw, 111vw));
+  }
+  .skilldrop0{
+    grid-area: 4 / 3 / 5 / 4
+  }
+  .skilldrop1{
+    grid-area: 9 / 1 / 10 / 2;
+  }
+  .skilldrop2{
+    grid-area: 10 / 4 / 11 / 5;
+  }
+  .skilldrop3{
+    grid-area: 8 / 6 / 9 / 7;
+  }
+  .skilldrop4{
+    grid-area: 11 / 5 / 12 / 6;
+  }
+  .skilldrop5{
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .skilldrop6{
+    grid-area: 12 / 3 / 13 / 4;
+  }
+  .skilldrop7{
+    grid-area: 10 / 2 / 11 / 3;
+  }
+  .skilldrop8{
+    grid-area: 11 / 4 / 12 / 5;
+  }
+  .skilldrop9{
+    grid-area: 3 / 4 / 4 / 5;
+  }
+  .skilldrop10{
+    grid-area: 12 / 1 / 13 / 2;
+  }
+  .skilldrop11{
+    grid-area: 11 / 6 / 12 / 7;
   }
 }
 
@@ -213,12 +260,21 @@ canvas {
       grid-template-rows: repeat(9 ,minmax(5vh, 11vh));
       transform-origin: top;
   }
-  /*.Skillsdrop{ 
-    grid-area: 4 / 3 / 16 / 4 ;
+  .skillsdrop{
+    grid-area: 3 / 1 / 13 / 7;
     display: grid;
-    grid-template-rows: repeat(12 ,minmax(5vh, 11vh));
-    transform-origin: top;
-  }*/
+    grid-template-rows: repeat(10 ,minmax(5vh, 11vh));
+    grid-template-columns: repeat(6, minmax(1vw, 111vw));
+  }
+  .about{
+    grid-area: 4 / 3 / 13 / 5;
+    font-size: clamp(14px, 3vw, 40px);
+    background-color: #3f005249;
+    p {
+      padding:  clamp(20px, 3vw, 40px) ;
+      font-weight: 700;
+    }
+  }
   .Llinksdrop{
     grid-area: 4 / 5 / 13 / 7 ;
     display: grid;

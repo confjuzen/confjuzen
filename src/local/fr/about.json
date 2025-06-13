@@ -1,6 +1,5 @@
 {
-  "about": {
-    "aboutme": "fffdsfdsfds",
-    "skills": ["React", "CSS", "JavaScript", "TypeScript" ]
-  }
+    "about": "Salut ! Je suis Toby Foster, développeur web et graphiste spécialisé dans le développement front-end et back-end.",
+    "skillsTitle": "SKILLS",
+    "skills": ["React", "CSS", "JavaScript", "TypeScript", "Node.js", "Express.js", "MongoDB", "Git", "Python", "SEO", "Notion"]
 }

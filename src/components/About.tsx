@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
-  const { t } = useTranslation('About');
-  const Skills = t('skills', { returnObjects: true }) as Array<{ skills: string }>;
+  const { t } = useTranslation('about');
   const [isOpen, setIsOpen] = useState(false);
   const [locked, setLocked] = useState(false);
 
@@ -28,32 +27,28 @@ const About: React.FC = () => {
     }
   }
 
-  // Add safety check to ensure Skills is an array
-  const skillsArray = Array.isArray(Skills) ? Skills : [];
+  const skillsArray = t('skills', { returnObjects: true }) as string[];
 
   return (
     <>
-      <div className="item fill button skills title2" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onClick={handleClick}>
+      <div className="item fill button Skills title2" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onClick={handleClick}>
         <h2>{t('skillsTitle')}</h2>
       </div>
-
-      <p className="item about">{t('about')} </p>
-
+      <div className="item about">
+        <p >{t('about')} </p>
+      </div>
       <div className={`skillsdrop ${isOpen ? 'grow' : 'shrink'}`}>
-        {skillsArray.map((skill, index: number) => (
+        {skillsArray.map((skill, index) => (
           <p
             key={index}
-            className={`fill item skills ${'drop'+index}`}
-            rel="noopener noreferrer"
-            onMouseLeave={handleMouseLeave} 
-            onMouseEnter={handleMouseEnter}
+            className={` item tag skills ${'skilldrop'+index}`}
+
           >
-            {skill.skills}
+            {skill}
           </p>
         ))}
       </div>
     </>
   );
 }
-
 export default About;

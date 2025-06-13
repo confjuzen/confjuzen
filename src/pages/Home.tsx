@@ -1,6 +1,5 @@
 
 import Projects from '../components/Projects';
-import Skills from '../components/Skills';  
 import Llinks from '../components/Llinks';
 import About from '../components/About';
 
@@ -8,9 +7,9 @@ import About from '../components/About';
 const Home = () => {
     return (
         <>
+                    <About />
+
             <Projects />
-            <Skills />
-            <About />
             <Llinks />
      </>
     )
