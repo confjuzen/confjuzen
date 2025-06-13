@@ -27,6 +27,7 @@
       "title": "Nina Carducci",
       "discriptiontitle": "Ce projet est le troisième projet de la formation OpenClassrooms – Développeur Web.",
       "discription": "J’ai travaillé sur le site d’une photographe, Nina Carducci, pour améliorer ses performances, son accessibilité et son référencement. J’ai corrigé plusieurs bugs, optimisé le code et les images, ajouté des métadonnées pour le SEO et mis en place un référencement local via Schema.org. Un rapport détaillant les résultats avant/après a été livré à la cliente.",
+      "difficulties": "Difficultés rencontrées : Difficultés avec la minification JavaScript, notamment avec certains scripts qui cassaient après minification. Incompréhensions initiales sur des éléments du SEO (comme les balises Open Graph, les méta-descriptions optimisées ou l’impact des titres hiérarchiques). Rechercher les bonnes pratiques d’optimisation sans altérer l’apparence ou le fonctionnement du site",
       "url": "https://github.com/confjuzen/nina-optimization-project-documentation",
       "tags": ["SEO", "Performance optimization", "Corrections JavaScript", "Intégration de métadonnées"],
       "img1": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/15.png",

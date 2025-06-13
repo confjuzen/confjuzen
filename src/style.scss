@@ -117,7 +117,7 @@ canvas {
   }
   .about{
     grid-area: 7 / 2 / 12 / 6;
-    font-size: clamp(14px, 3vw, 40px);    
+    font-size: clamp(14px, 3vw, 25px);    
     background-color: #3f005249;
     p {
       padding:  clamp(20px, 3vw, 40px) ; 
@@ -376,6 +376,8 @@ canvas {
   .tagsline{
     grid-area: 4 / 1 / 5 / 7;
     display: flex;
+    overflow-y: scroll;
+
   }
   .tag{
     background-color: #3f005249;
@@ -384,6 +386,7 @@ canvas {
     text-transform: uppercase;
     flex-grow: 1;
     font-size: clamp(10px,  1.2vw, 12px);
+    padding: 0px 10px 0px 10px;
   }
   .discription{
     grid-area: 5 / 1 / 13 / 5;
@@ -397,6 +400,7 @@ canvas {
       letter-spacing: normal;
     }
     p{
+
       font-weight: 500;
       padding: 5px;
     }
