@@ -1,8 +1,6 @@
 
 function Graphics() {
 
-
-
   return (
     <>
         <div className="gallery">

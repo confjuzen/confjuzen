@@ -21,15 +21,12 @@ const Llinks: React.FC = () => {
   
     function handleClick() {
       if (isOpen && !locked) {
-        // If open but not locked, click locks it
         setLocked(true);
       } else if (isOpen && locked) {
-        // If already locked and open, click unlocks and closes
         setLocked(false);
         setIsOpen(false);
       }
     }
-  
       return (
         <>
         <div className="item fill button Llinks title2" onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} onClick={handleClick}><h2>{t('linksTitle')}</h2></div>
@@ -52,6 +49,4 @@ const Llinks: React.FC = () => {
         </>
       );
 }
-
-
 export default Llinks;

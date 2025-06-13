@@ -19,10 +19,8 @@ const Skills: React.FC = () => {
   
     function handleClick() {
       if (isOpen && !locked) {
-        // If open but not locked, click locks it
         setLocked(true);
       } else if (isOpen && locked) {
-        // If already locked and open, click unlocks and closes
         setLocked(false);
         setIsOpen(false);
       }
@@ -40,8 +38,6 @@ const Skills: React.FC = () => {
         .then((res) => res.json())
         .then((data) => setLinks(data));
     }, []);
-  
-    
 
       return (
         <>
@@ -64,8 +60,6 @@ const Skills: React.FC = () => {
         </div>
         </>
       );
-    
 }
-
 
 export default Skills;

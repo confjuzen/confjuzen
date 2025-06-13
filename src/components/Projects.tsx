@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Projects: React.FC = () => {
   const { t } = useTranslation('projects'); 
-  const projects = Object.values(t('projects', { returnObjects: true })); // Get the projects as an array
+  const projects = Object.values(t('projects', { returnObjects: true }));
 
   const [isOpen, setIsOpen] = useState(false);
   const [locked, setLocked] = useState(false);

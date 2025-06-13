@@ -5,7 +5,7 @@
       "title": "Qwenta",
       "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
       "url": "https://github.com/confjuzen/qwenta",
-      "tags": ["notion", "feedly"],
+      "tags": ["notion", "feedly", "AWS", "Docker"],
       "img1": "./img/projects/1.png",
       "img2": "./img/projects/2.png",
       "img3": "./img/projects/3.png"
@@ -13,22 +13,28 @@
     "Mon Vieux Grimoire": {
       "title": "Mon Vieux Grimoire",
       "discription": "An Open Classrooms project. To Build a full functional backend for book reviewing and management.",
-      "url": "/grimoire",
+      "url": "https://github.com/confjuzen/server-grimoire",
       "tags": ["Node", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "multer", "sharp"]
     },
     "Nina Carducci": {
       "title": "Nina Carducci",
       "discriptiontitle": "Ce projet est le troisième projet de la formation OpenClassrooms – Développeur Web.",
       "discription": "J’ai travaillé sur le site d’une photographe, Nina Carducci, pour améliorer ses performances, son accessibilité et son référencement. J’ai corrigé plusieurs bugs, optimisé le code et les images, ajouté des métadonnées pour le SEO et mis en place un référencement local via Schema.org. Un rapport détaillant les résultats avant/après a été livré à la cliente.",
-      "url": "/3",
-      "tags": ["SEO", "Performance optimization", "Corrections JavaScript", "Intégration de métadonnées  "]
+      "url": "https://github.com/confjuzen/nina-optimization-project-documentation",
+      "tags": ["SEO", "Performance optimization", "Corrections JavaScript", "Intégration de métadonnées"],
+      "img1": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/15.png",
+      "img2": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png",
+      "img3": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/final.png"
     },
     "Sophie Bluel": {
       "title": "Sophie Bluel",
       "discriptiontitle": "Ce projet est le deuxième projet de la formation OpenClassrooms – Développeur Web.",
       "discription": "Développer un site web dynamique en JavaScript pour présenter les réalisations d’une architecte d’intérieur, incluant : une page de présentation des projets, une interface d’administration sécurisée (login) et une modale d’ajout de nouveaux médias. J'interviens en tant que développeur front-end dans une agence, pour aider à finaliser le portfolio en ligne d’une architecte. J'ai récupèrer une base HTML/CSS statique, un backend existant (fourni), et des maquettes Figma à suivre.",
       "url": "https://github.com/confjuzen/Portfolio-architecte-sophie-bluel",
-      "tags": ["JavaScript", "HTML", "CSS", "API"]
+      "tags": ["JavaScript", "HTML", "CSS", "API"],
+      "img1": "./img/projects/Sophie1.png",
+      "img2": "./img/projects/Sophie2.png",
+      "img3": "./img/projects/Sophie3.png"
     },
     "Kasa": {
       "title": "Kasa",

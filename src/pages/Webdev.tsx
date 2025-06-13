@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Webdev: React.FC = () => {
   const { t } = useTranslation("webprojects");
-  const projects = Object.values(t("webprojects", { returnObjects: true })); // Get the projects as an array
+  const projects = Object.values(t("webprojects", { returnObjects: true }));
 
   const [isOpen, setIsOpen] = useState(false);
   const [locked, setLocked] = useState(false);

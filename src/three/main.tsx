@@ -2,23 +2,14 @@ import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-
 import { useLocation } from "react-router-dom";
-
-
-
 
 const Three: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
-
-
-
   
   useEffect(() => {
     if (!containerRef.current) return;
-
-
 
     let modelColor = '#c5a0cc';
 
@@ -31,7 +22,6 @@ const Three: React.FC = () => {
         modelColor = '#c5a0cc';
       }
       console.log('location log:', location, modelColor);
-
     }
     changecolor();
 
@@ -124,8 +114,6 @@ const Three: React.FC = () => {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
-
-
 
     window.addEventListener("resize", handleResize);
 

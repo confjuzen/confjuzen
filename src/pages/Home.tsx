@@ -2,6 +2,7 @@
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';  
 import Llinks from '../components/Llinks';
+import About from '../components/About';
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <>
             <Projects />
             <Skills />
+            <About />
             <Llinks />
      </>
     )

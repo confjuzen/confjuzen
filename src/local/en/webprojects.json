@@ -5,7 +5,7 @@
       "title": "Qwenta",
       "discription": "An Open Classrooms project. To Manage a fulll stack web application.",
       "url": "https://github.com/confjuzen/qwenta",
-      "tags": ["notion", "feedly"],
+      "tags": ["notion", "feedly", "AWS", "Docker"],
       "img1": "./img/projects/1.png",
       "img2": "./img/projects/2.png",
       "img3": "./img/projects/3.png"
@@ -13,14 +13,14 @@
     "Mon Vieux Grimoire": {
       "title": "Mon Vieux Grimoire",
       "discription": "An Open Classrooms project. To Build a full functional backend for book reviewing and management.",
-      "url": "/grimoire",
+      "url": "https://github.com/confjuzen/server-grimoire",
       "tags": ["Node", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "multer", "sharp"]
     },
     "Nina Carducci": {
       "title": "Nina Carducci",
       "discriptiontitle": "This is the third project of the OpenClassrooms Web Developer path.",
       "discription": "I worked on a photographer’s website, Nina Carducci, to improve its performance, accessibility, and SEO. I fixed bugs, optimized code and images, added SEO metadata, and implemented local SEO using Schema.org. I also delivered a detailed report showing the before/after results.",
-      "url": "/3",
+      "url": "https://github.com/confjuzen/nina-optimization-project-documentation",
       "tags": ["SEO", "Performance optimization", "JavaScript bug fixing", "Metadata integration"],
       "img1": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/15.png",
       "img2": "https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png",

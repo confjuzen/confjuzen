@@ -7,6 +7,9 @@ import enLinks from './local/en/links.json';
 import frLinks from './local/fr/links.json';
 import enWebprojects from './local/en/webprojects.json';
 import frWebprojects from './local/fr/webprojects.json';
+import enAbout from './local/en/about.json';
+import frAbout from './local/fr/about.json';
+
 i18n
 .use(initReactI18next)
 .init({
@@ -14,12 +17,14 @@ i18n
     en: {
       projects: enProjects,
       links: enLinks,
-      webprojects: enWebprojects
+      webprojects: enWebprojects,
+      about: enAbout
     },
     fr: {
       projects: frProjects,
       links: frLinks,
-      webprojects: frWebprojects
+      webprojects: frWebprojects,
+      about: frAbout
     }
   },
   lng: 'en',
