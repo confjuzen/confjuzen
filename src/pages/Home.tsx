@@ -7,11 +7,10 @@ import About from '../components/About';
 const Home = () => {
     return (
         <>
-                    <About />
-
+            <About />
             <Projects />
             <Llinks />
-     </>
+        </>
     )
 };
 

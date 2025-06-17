@@ -2,28 +2,28 @@ import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 
 const Three: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const location = useLocation();
+  //const location = useLocation();
   
   useEffect(() => {
     if (!containerRef.current) return;
 
     let modelColor = '#c5a0cc';
 
-    function changecolor() {
-
-      if (location.pathname === "/graphics") {
-        modelColor = '#000000';
-      }
-      else {
-        modelColor = '#c5a0cc';
-      }
-      console.log('location log:', location, modelColor);
-    }
-    changecolor();
+   // function changecolor() {
+//
+   //   if (location.pathname === "/graphics") {
+   //     modelColor = '#000000';
+   //   }
+   //   else {
+   //     modelColor = '#c5a0cc';
+   //   }
+   //   console.log('location log:', location, modelColor);
+   // }
+   // changecolor();
 
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xffffff);
@@ -78,7 +78,6 @@ const Three: React.FC = () => {
       (error: unknown) => {
         console.error("An error occurred while loading the model", error);
       }
-      
     );
 
     const sphereCount = 150;

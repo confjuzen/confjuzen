@@ -8,16 +8,16 @@ const Langselect = () => {
 
   function handleClick(isEn: boolean) {
     setLockedIsEn(isEn);
-    i18n.changeLanguage(isEn ? 'en' : 'fr'); // Lock language when clicked
+    i18n.changeLanguage(isEn ? 'en' : 'fr');
   }
 
   function handleMouseEnter(isEn: boolean) {
     setHoverIsEn(isEn as unknown as null);
-    i18n.changeLanguage(isEn ? 'en' : 'fr'); // Also change language on hover!
+    i18n.changeLanguage(isEn ? 'en' : 'fr');
   }
   function handleMouseLeave() {
     setHoverIsEn(null);
-    i18n.changeLanguage(lockedIsEn ? 'en' : 'fr'); // Return to locked language
+    i18n.changeLanguage(lockedIsEn ? 'en' : 'fr');
   }
 
   const currentIsEn = hoverIsEn !== null ? hoverIsEn : lockedIsEn;

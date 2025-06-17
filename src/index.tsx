@@ -8,11 +8,12 @@ import Graphics from './pages/graphics.tsx'
 import './i18n';
 import Langselect from './components/langselect.tsx';
 import Toby from './components/toby.tsx';
-import Scroll from './utils/Scroll.tsx';
+//import Scroll from './utils/Scroll.tsx';
 import Webdev from './pages/Webdev.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    
     <Router>
       <div className="border grid">
         <Toby />
@@ -25,7 +26,7 @@ createRoot(document.getElementById('root')!).render(
         <div className="fixborder item"></div>
       </div>
       <Three />
-      <Scroll />
     </Router>
+    <img className="noise" src="/img/noise.gif" alt="" />
   </StrictMode>
 )
