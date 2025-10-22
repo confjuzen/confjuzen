@@ -103,7 +103,10 @@ const Webdev: React.FC = () => {
             <p>{projects[selectedIndex].discription}</p>
             <p>{projects[selectedIndex].difficulties}</p>
           </div>
-          <a href={projects[selectedIndex].url} className="github item">GitHub</a>
+          <a href={projects[selectedIndex].github} className="github item">GitHub</a>
+          {projects[selectedIndex].url && (
+            <a href={`https://${projects[selectedIndex].url}`} className="urllink item">{projects[selectedIndex].url}</a>
+          )}
         </>
       )}
     </>
