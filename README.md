@@ -92,11 +92,3 @@ Hey there! I'm Toby Foster, a **web developer** and **graphic designer** with a 
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=neovim" height="30" alt="neovim logo"  />
 </div>
-
-## 🛸 - 𝙂𝙞𝙩𝙃𝙪𝙗 𝙎𝙩𝙖𝙩𝙨
-<a href="https://github.com/confjuzen">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=confjuzen&show_icons=true&theme=rose_pine&card_width=320" />
-</a>
-<a href="https://github.com/confjuzen">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=confjuzen&layout=compact&theme=rose_pine&size_weight=0.1&count_weight=0.9&card_width=310" />
-</a>
